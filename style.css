@@ -17,6 +17,12 @@ body {
 
 }
 
+.center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .horizontal {
         display: block;
         margin-right: auto;
