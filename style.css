@@ -1,3 +1,13 @@
 body {
     background-color: rgb(3, 77, 3);
 }
+#self {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.center {
+    background-color: blueviolet;
+    
+}
