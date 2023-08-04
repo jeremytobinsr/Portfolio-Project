@@ -33,7 +33,8 @@ body {
 
 .para {
     display: flex;
-    font-size: 20px;
+    font-size: ;
+    text-indent: 20px;
 }
 
 #font1 {
@@ -42,4 +43,10 @@ body {
 
 #hello {
     font-family: 'Pacifico', cursive;
+}
+
+#font1 {
+    display: flex;
+    font-size: 40px;
+    text-: auto;
 }
