@@ -56,6 +56,7 @@ body {
 .button {
     
     color: green;
+    border-radius: 30px;
 }
 
 .container {
@@ -71,5 +72,21 @@ body {
     left: 42%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    
+}
+
+.drum1 {
+    display: flex;
 }
   
+.drum2 {
+    margin-left: 60%;
+    
+}
+
+.pictext1 {
+    display: flex;
+    background-color: rgba(137, 43, 226, 0.712);
+    justify-content: flex-end;
+
+}
