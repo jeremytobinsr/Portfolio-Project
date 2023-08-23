@@ -90,3 +90,10 @@ body {
     justify-content: flex-end;
 
 }
+
+.pictext2 {
+    display: flex;
+    background-color: rgba(137, 43, 226, 0.712);
+    justify-content: flex-start;
+
+}
