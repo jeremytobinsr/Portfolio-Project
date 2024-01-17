@@ -92,6 +92,20 @@
                 <p class="center" class="para">
                   Below is my final project for that class. 
                 </p>
+                
+                <label for="userInput">Type something:</label>
+                
+                
+                <input type="text" id="inputBox" oninput="displayData()">
+
+                <p id="display"></p>
+
+<script>
+function displayData() {
+  const input = document.getElementById("inputBox").value;
+  document.getElementById("display").innerHTML = "You typed: " + input;
+}
+</script>
 
 
 

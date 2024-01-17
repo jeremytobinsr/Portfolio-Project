@@ -1,3 +1,17 @@
+const userInput = document.getElementById('userInput');
+
+const displayElement = document.getElementById('userInput');
+
+userInput.addEventListener('input' . (event) => {
+  
+  const text = event.target.value;
+
+  displayElement.innerText = text;
+});
+
+
+
+
 const axios = require('axios');
 
 async function makeApiCalls(){
