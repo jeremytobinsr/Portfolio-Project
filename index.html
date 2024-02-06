@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&family=Playfair:ital,wght@1,300&family=Tilt+Prism&display=swap" rel="stylesheet">
-    <script src="index.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer ></script>
 
 </head>
 <body>
@@ -92,19 +93,26 @@
                 <label for="userInput">Type something:</label>
                 
                 
-                <input type="text" id="inputBox" oninput="displayData()">
+                <input type="text" id="userInput" oninput="displayData()">
 
                 <p id="display"></p>
 
                 <script>
                     function displayData() {
-                    const input = document.getElementById("inputBox").value;
+                    const input = document.getElementById("userInput").value;
                     document.getElementById("display").innerHTML = "You typed: " + input;
                     }
                 </script>
 
 
                 </p>
+
+                <div>
+                    <input type="text" >
+
+
+
+                </div>
 
 
 

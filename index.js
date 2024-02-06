@@ -1,8 +1,9 @@
 const userInput = document.getElementById('userInput');
+console.log(userInput);
 
 const displayElement = document.getElementById('userInput');
 
-userInput.addEventListener('input'.(event) => {
+userInput.addEventListener('input',(event) => {
   
   const text = event.target.value;
 
@@ -12,7 +13,7 @@ userInput.addEventListener('input'.(event) => {
 
 
 
-const axios = require('axios');
+
 
 async function makeApiCalls(){
   try {
@@ -37,4 +38,4 @@ async function makeApiCalls(){
         image.src = response.data.message;
       });
       
-    ])
+    })
