@@ -11,6 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&family=Playfair:ital,wght@1,300&family=Tilt+Prism&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.1.0/dist/axios.min.js"></script>
+<script>
+    axios.get()
+</script>
     <script src="index.js" defer ></script>
 
 </head>
@@ -103,7 +108,7 @@
                 </p>
 
                 
-                <input type="text" id="searchInput">
+                <input title="searchImage" type="text" id="searchInput">
                 
                 <button class="button" onclick="searchImage()">Search</button>
                 
@@ -113,7 +118,7 @@
                     function search(){
                         const searchValue= document.getElementById("searchInput").value;
 
-                        const apiUrl= 'https://dog.ceo/api/breeds/list/all'
+                        const apiUrl= 'https://dog.ceo/api/breeds/list/all/?search=${searchValue}'
 
 
 
@@ -121,6 +126,12 @@
 
                     }
                 </script>
+                 <script src="https://unpkg.com/axios@1.1.0/dist/axios.min.js"></script>
+                 <script>
+                     axios.get(...);
+                     console.log('axios');
+                     
+                 </script>
 
                 <script>
                     function displayData() {

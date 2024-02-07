@@ -1,4 +1,4 @@
-const axios= require('axios');
+const axios= ('axios');
 
 populateDropdown();
 
@@ -25,7 +25,7 @@ async function fetchDogBreeds() {
       return imageUrl;
     } 
       catch(error) {
-        console.error('Erroe fetching dog image:', error);
+        console.error('Error fetching dog image:', error);
           return null;
       }
   }
@@ -76,21 +76,19 @@ userInput.addEventListener('input',(event) => {
 
 async function makeApiCalls(){
   try {
-    const response1 = await axios.get('');
-
-    const response2 = await axios.get('');
+    const response1 = await axios.get('https://dog.ceo/api/breeds/list/all');
 
     } catch (error) {
     
     }}
 
-    const button = document.querySelector(".button");
+    const button2 = document.querySelector(".button");
   button.addEventListener("click", () => {
-    axios({
+    axios ({
       url: "https://dog.ceo/api/breeds/list/all",
       method: "GET",
     })
-      .then((response) => {
+      .then ((response) => {
       
         const image = document.querySelector("#image");
       
@@ -99,6 +97,20 @@ async function makeApiCalls(){
       
    });
  
+   const button = document.querySelector("button");
+   button.addEventListener("click", () => {
+     axios ({
+       url: "https://dog.ceo/api/breeds/list/all",
+       method: "GET",
+     })
+       .then ((response) => {
+       
+         const image = document.querySelector("#image");
+       
+         image.src = response.data.message;
+       });
+       
+    });
 
 
   
