@@ -97,6 +97,31 @@
 
                 <p id="display"></p>
 
+            
+
+
+                </p>
+
+                
+                <input type="text" id="searchInput">
+                
+                <button class="button" onclick="searchImage()">Search</button>
+                
+                <div id="imageContainer"></div>
+                
+                <script>
+                    function search(){
+                        const searchValue= document.getElementById("searchInput").value;
+
+                        const apiUrl= 'https://dog.ceo/api/breeds/list/all'
+
+
+
+
+
+                    }
+                </script>
+
                 <script>
                     function displayData() {
                     const input = document.getElementById("userInput").value;
@@ -104,17 +129,7 @@
                     }
                 </script>
 
-
-                </p>
-
-                <div>
-                    <input type="text" >
-
-
-
-                </div>
-
-
+                
 
 
             </div>
@@ -127,18 +142,9 @@
         </div>
 
 
-
-
-
-    
-
-
-
-
-
         <div class="container">
             <div class="vertical-center">
-            <button type="button" class="button">
+            <button type="button" class="button1">
             <h2>        
                 <a id="self" class="center2" href="/Documents/Jtobin_resume.docx">My Resume</a>
             </h2>
