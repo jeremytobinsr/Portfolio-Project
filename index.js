@@ -29,7 +29,7 @@ async function populateDropdown() {
     const selectElement = document.getElementById('breed-select');
 
     const defaultOption = document.createElement('option');
-    defaultOption.value = 'Options';
+    defaultOption.value = 'Breed Options';
     defaultOption.textContent = 'Select Breed';
     selectElement.appendChild(defaultOption);
 
@@ -145,7 +145,7 @@ async function makeApiCalls(){
      })
        .then ((response) => {
        
-         const image = document.querySelector("#image");
+         const image = document.querySelector("image");
        
          image.src = response.data.message;
        });
