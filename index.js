@@ -1,11 +1,52 @@
 const axios= ('axios');
 
-populateDropdown();
+async function populateDropdown() {
+  const breeds = await fetchDogBreeds();
+
+  if (breeds) {
+    const selectElement = document.getElementById('breed-select');
+
+    // Add default option
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'Select Breed';
+    selectElement.appendChild(defaultOption);
+
+    for (const breed in breeds) {
+      const optionElement = document.createElement('option');
+      optionElement.value = breed;
+      optionElement.textContent = breed;
+
+      selectElement.appendChild(optionElement);
+    }
+  }
+}
+
+async function populateDropdown() {
+  const breeds = await fetchDogBreeds();
+
+  if (breeds) {
+    const selectElement = document.getElementById('breed-select');
+
+    const defaultOption = document.createElement('option');
+    defaultOption.value = 'Options';
+    defaultOption.textContent = 'Select Breed';
+    selectElement.appendChild(defaultOption);
+
+    for (const breed in breeds) {
+      const optionElement = document.createElement('option');
+      optionElement.value = breed;
+      optionElement.textContent = breed;
+
+      selectElement.appendChild(optionElement);
+    }
+  }
+}
 
 async function fetchDogBreeds() {
   try {
       const response=await 
-    axios.get('https://dog.ceo/spi/breeds/list/all');
+    axios.get('https://dog.ceo/api/breeds/list/all');
       const breeds= response.data.message;
       
       return breeds;
@@ -49,7 +90,6 @@ async function fetchDogBreeds() {
         const optionElement= 
         document.createElement('option');
           optionElement.value= breed;
-          optionElement.value= breed;
           optionElement.textContent= breed;
 
     selectElement.appendChild(optionElement);
@@ -83,7 +123,7 @@ async function makeApiCalls(){
     }}
 
     const button2 = document.querySelector(".button");
-  button.addEventListener("click", () => {
+  button2.addEventListener("click", () => {
     axios ({
       url: "https://dog.ceo/api/breeds/list/all",
       method: "GET",
